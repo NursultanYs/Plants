@@ -1,0 +1,260 @@
+
+@media(max-width:380px){
+    .container{
+        max-width: 360px;
+    }
+    .header{
+        padding: 36px 0;
+    }
+    .header nav{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        position: absolute;
+        right: 25px;
+        top: 7.5%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 26px;
+    }
+    .hamburger span{
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color:#717171;
+        margin-bottom:6px;
+        transition: 0.5s;
+    }
+    .hamburger_active{
+        top:9%
+    }
+    .hamburger span:nth-child(4){
+        margin-bottom: 0;
+    }
+    .hamburger_active span{
+        margin-bottom: -2px;
+    }
+    .hamburger_active span:nth-child(1){
+        width: 80%;
+        transform: translateY(3px) rotate(-45deg);
+    }
+    .hamburger_active span:nth-child(2){
+        display: none;
+    }
+    .hamburger_active span:nth-child(4){
+        width: 80%;
+        transform:translateY(3px) rotate(45deg);
+    }
+    .hamburger_active span:nth-child(3){
+        display: none;
+    }
+    .header nav .hamburger_active{
+        display: block;
+    } 
+
+    .welcome {
+        min-height: 300px;
+    }
+    .welcome__content {
+        padding: 24px 0;
+    }
+    .welcome__description{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 341px;
+        min-height: 252px;  
+        padding: 0;
+    }
+    .welcome__description h1{
+        margin: 0;
+        font-size: 25px;
+    }
+    .welcome__description a{
+        padding: 8px 14px;
+        max-width: 100px;
+        font-size: 10px;
+        line-height: 20px;
+     }
+     .welcome__description p{
+        font-size: 16px;
+     }
+    .welcome__img{
+        display: none;
+    }
+
+    .about{
+        min-height: 516px;
+    }
+    .about__content{
+        padding-top:30px;
+        padding-bottom: 31px;
+    }
+    .about__content h2{
+        font-size: 25px;
+        margin-bottom: 21px;
+        max-width: 288px;
+    }
+    .about__description{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        max-width: 668px;
+        padding: 0;
+        margin: 0;
+        min-height: 0;
+    }
+    .about__img{
+        width: 150px;
+        height: 147px;
+    }
+
+    .menu h2{
+        font-size: 25px; 
+        margin-bottom: 35px;
+        max-width: 187px;
+    }
+    .menu__buttons{
+        max-width: 252px;
+        flex-wrap: wrap;
+    }
+    .menu__button {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        border: 1px solid #E06733;
+        border-radius: 5px;
+        transition: 0.2s;
+        max-width: 121px;
+        max-height: 35px;
+        font-size: 15px;
+        margin: 0;
+    }
+    .menu__button:nth-child(1){
+        margin-bottom: 9px;
+    }
+    .menu__button+.menu__button {
+        margin-left: 0px;
+    }
+    .menu__cards{
+        justify-content: center;
+    }
+
+    .prices{
+        min-height: 512px;
+        padding-bottom: 84px;
+        padding-top:25px;
+        padding: 40px;
+    }
+    .prices__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .prices__info{
+        display: flex;
+        flex-direction: column;
+        align-items:center
+    }
+    .prices__info h2{
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .pricebuttons {
+        min-height: 235px;
+        max-width: 224px;
+        padding: 29px 22px;
+        border: 1px solid #E3E1D5;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .pricebuttons a {   
+        display: flex;
+        align-items:center;
+        font-size: 15px;
+        max-width: 180px;
+        max-height: 49px;
+        transition: 0.2s;
+        padding: 16px 76px 16px 40px;
+    }
+    .pricebuttons a::after {   
+       top: 18px;
+    }
+    .price__description{
+        padding-top: 19px;
+        max-width: 100%;
+        display: flex;
+        align-items:center;
+    }
+    .price__description h3 {
+        font-size: 20px;
+        margin-bottom: 22px;
+        line-height: 35px;
+        margin-bottom: 14px;
+        text-align: center;
+    }
+    .price__contacts{
+        margin: 0;
+        align-items:center;
+    }
+    .price__contacts .menu__button{
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+        align-items:center;
+        padding: 12px 16px 12px 16px;
+    }
+    .price__contacts img{
+        display: none;
+    }
+
+
+    .contact {
+        min-height: 445px;
+        background: #EDF2EC;
+        padding-top: 25px;
+    }
+    .contact .h2{
+        margin-bottom: 80px;   
+    }
+    .contact__content { 
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        align-items:center;
+        font-size: 25px;
+    }
+    .contact__button{
+        justify-content: center;
+    }
+    .contact__header{
+        text-align:center
+    }
+    .contact__content button{
+        margin-bottom: 250px;
+    }
+    .contact__img{
+        width: 100px;
+        height: 124px;
+    }
+    .contact__img img{
+        width:100%;
+        height: auto;
+    }
+    .contact__content button {
+        max-width: 300px;
+        padding: 13px 279px 13px 20px;
+        margin-bottom: 132px;
+    }   
+    .footer{
+        padding: 22px 7px;
+    }
+    .footer h4{
+        margin-bottom: 3px;
+    }
+}
