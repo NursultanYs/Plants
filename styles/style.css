@@ -28,14 +28,21 @@ font-family: 'Roboto', sans-serif; */
     display: flex;
 }
 
-.header__nav li+li {
-    margin-left: 46px;
-}
-
 .header__nav a {
     color: #010201;
     transition: 0.2s;
 }
+
+.header__nav ul li:first-child a{
+    color: #E06733;
+    font-weight: 700;
+}
+
+
+.header__nav li+li {
+    margin-left: 46px;
+}
+
 
 .header__nav a:hover {
     color: #E06733;
@@ -79,7 +86,6 @@ font-family: 'Roboto', sans-serif; */
 
 
 .welcome__description {
-
     max-width: 549px;
     padding: 32px 0;
     min-height: 340px;
@@ -107,11 +113,13 @@ font-family: 'Roboto', sans-serif; */
 .link {
     display: inline-block;
     font-size: 16px;
-    padding: 14px 27px;
+    padding: 9px 13px;
     border: 2px solid #E06733;
     border-radius: 10px;
     font-weight: 400;
     transition: 0.2s;
+    width: 158px;
+    height: 44px;
 }
 
 .link:hover {
@@ -119,10 +127,7 @@ font-family: 'Roboto', sans-serif; */
     color: #FFFFFF;
 }
 
-.link:active {
-    background: #b3491b;
-    color: #FFFFFF;
-}
+
 
 .about {
     min-height: 666px;
@@ -172,10 +177,10 @@ font-family: 'Roboto', sans-serif; */
 }
 
 
-.menu {
+.service {
     min-height: 1300px;
     background: #EDF2EC;
-    padding-top: 40px;
+    padding-top: 36px;
     padding-bottom: 66px;
 }
 
@@ -200,21 +205,20 @@ font-family: 'Roboto', sans-serif; */
     justify-content: space-between;
     margin-right: 8px;
     font-size: 20px;
-    color: #E06733;
+
 }
 
 .menu__button {
     padding: 14px 42px;
     border: 1px solid #E06733;
+    color: #E06733;
     border-radius: 5px;
     transition: 0.2s;
 }
 
-.menu__button:hover {
-    background-color: #cbdac9;
-}
 
-.menu__buttons .menu__button:focus {
+
+.menu__buttons .menu__button:hover {
     background-color: #E06733;
     color: #fff
 }
@@ -272,7 +276,7 @@ font-family: 'Roboto', sans-serif; */
 
 .prices {
     min-height: 560px;
-    padding: 40px 0 115px 0;
+    padding: 31px 0 115px 0;
     font-family: 'Inter';
 }
 
@@ -300,8 +304,13 @@ font-family: 'Roboto', sans-serif; */
     justify-content: space-between;
 }
 
-.pricebuttons a {
-    padding: 16px 110px 16px 40px;
+.pricebuttons label {
+    width: 250px;
+    height: 50px;
+    display: flex;
+    padding-left: 40px;
+    justify-content: flex-start;
+    align-items:center;
     background: #EDF2EC;
     border-radius: 20px;
     font-weight: 700;
@@ -312,11 +321,11 @@ font-family: 'Roboto', sans-serif; */
 }
 
 
-.pricebuttons a:hover {
+.pricebuttons label:hover {
     background-color: #afafaf
 }
 
-.pricebuttons a::after {
+.pricebuttons label::after {
     content:'';
     position: absolute;
     right: 40px;
@@ -332,6 +341,11 @@ font-family: 'Roboto', sans-serif; */
     display: flex;
     flex-direction: column;
     max-width: 452px;
+}
+
+.price__description .menu__button:hover{
+    background-color: #E06733;
+    color: #fff
 }
 
 .price__description h3 {
@@ -369,10 +383,10 @@ font-family: 'Roboto', sans-serif; */
     justify-content: flex-end;
 }
 
-.contact {
+.contacts {
     min-height: 550px;
     background: #EDF2EC;
-    padding-top: 60px;
+    padding-top: 48px;
 }
 .contact__content { 
     display: flex;

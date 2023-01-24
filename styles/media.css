@@ -8,10 +8,12 @@
     .welcome__description h1{
         margin: 0;
         font-size: 35px;
+        line-height: 50px;
     }
     .welcome__description p{
         margin:0;
         font-size: 16px;
+        line-height: 25px;
     }
     .welcome__description{
         display: flex;
@@ -21,8 +23,8 @@
         min-height: 310px;  
         padding: 0;
     }
-    .welcome__description a{
-       max-width: 161px;
+    .welcome__description {
+       max-width: 346px;
     }
     .welcome__content {
         display: flex;
@@ -44,12 +46,12 @@
     .about__content h2{
         text-align: center;
         font-size: 35px;
-        margin-bottom: 40px;
+        margin-bottom: 53px;
         max-width: 423px;
     }
     .about__content p{
-        font-size: 15px;
-        line-height:25px;
+        font-size: 20px;
+        line-height:30px;
     }
     .about__description{
         display: flex;
@@ -67,12 +69,12 @@
     }
     
 
-    .menu {
+    .service {
         background: #EDF2EC;
         padding-top: 60px;
         padding-bottom: 32px;
     }
-    .menu h2{
+    .service h2{
         font-size: 35px; 
         margin-bottom: 40px;
         max-width: 306px;
@@ -110,22 +112,24 @@
         border-radius: 20px 20px 20px 20px;
     }
     .card p{
-        padding: 0 40px;
+        padding: 0 30px;
     }
     
     
     .prices{
         min-height: 560px;
         padding-bottom: 84px;
+        padding-top: 38px;
     }
     .prices__info h2{
         font-size: 35px;
-        margin-bottom: 60px;
+        margin-bottom: 51px;
+        padding-left: 14px;
     }
     .price__description h3 {
         font-weight: 700;
         font-size: 25px;
-        margin-bottom: 22px;
+        margin-bottom: 26px;
         line-height: 35px;
     }
     .price__description {
@@ -134,12 +138,12 @@
     }
     
 
-    .contact {
+    .contacts {
         min-height: 739px;
         background: #EDF2EC;
-        padding-top: 40px;
+        padding-top: 33px;
     }
-    .contact .h2{
+    .contacts .h2{
         margin-bottom: 100px;   
     }
     .contact__content { 
@@ -165,6 +169,7 @@
     .contact__img{
         width: 200px;
         height: 248px;
+        margin-left: 18px;
     }
     .contact__img img{
         width:100%;
@@ -181,8 +186,11 @@
     .footer p{
         word-spacing: 20px;
         margin-bottom: 16px;
+        line-height: 24px;
     }
     .footer h4{
         margin-bottom: 16px;
+        line-height: 24px;
     }
+
 }

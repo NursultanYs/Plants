@@ -67,4 +67,9 @@
     display: block;
   }
 
+  html {
+    scroll-behavior: smooth;
+    }
+
   .hide{display: none;}
+  .show{display: block;}

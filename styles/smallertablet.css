@@ -1,17 +1,9 @@
-
-@media(max-width:380px){
-    .container{
-        max-width: 360px;
-        padding: 0 12px;
-    }
-    .header{
-        padding: 36px 0;
-    }
+@media(max-width:621px){
     .hamburger{
         display: block;
         position: absolute;
         right: 25px;
-        top: 7.5%;
+        top: 9%;
         transform: translateY(-50%);
         width: 40px;
         height: 26px;
@@ -26,7 +18,7 @@
         transition: 0.5s;
     }
     .hamburger_active{
-        top: 9%;
+        top: 10.3%;
     }
     .hamburger span:nth-child(4){
         margin-bottom: 0;
@@ -52,119 +44,79 @@
         display: block;
     } 
 
-    .welcome {
-        min-height: 300px;
-    }
-    .welcome__content {
-        padding: 27px 0;
-        padding-bottom: 24px;
-    }
-    .welcome__description{
+
+    .header__nav {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        right: -100%;
+        top:0;
+        background-color:#edf2ec;
+        opacity: 0.9;
         display: flex;
         flex-direction: column;
+        align-items:center;
+        transition: all 0.3s ease 0s;
+        padding: 100px;
+        z-index: 1;
+        overflow:auto;
+    }
+    .active {           
+        right: 0;
+    }
+
+    .header__nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    .header__nav ul li {
+       margin:0;
+       font-size: 25px;
+       margin-bottom: 20px;
+    }
+    .header__nav ul li:first-child a{
+        color: #010201;
+        font-weight: 400;
+    }
+    .header__nav ul li:first-child a:hover{
+        color: #E06733;
+        font-weight: 700;
+    }
+    .logo{
+        z-index:10;
+    }
+    .media__burger ul{
+        display: flex;
+        flex-direction: row;
+        align-items:space-between;
         justify-content: space-between;
-        max-width: 341px;
-        min-height: 252px;  
-        padding: 0;
+        border-top: 1px solid #000;
+        padding-top: 25px;
+        width: 180px;
     }
-    .welcome__description h1{
-        margin: 0;
-        font-size: 25px;
-        line-height: 35px;
-    }
-    .welcome__description button{
-        padding: 5px 14px;
-        max-width: 100px;
-        font-size: 10px;
-        line-height: 20px;
-        height:34px;
-     }
-     .welcome__description p{
-        font-size: 16px;
-     }
-    .welcome__img{
-        display: none;
-    }
-
-    .about{
-        min-height: 516px;
-    }
-    .about__content{
-        padding-top:30px;
-        padding-bottom: 31px;
-    }
-    .about__content h2{
-        font-size: 25px;
-        margin-bottom: 14px;
-        max-width: 288px;
-    }
-    .about__description{
-        display: flex;
-        flex-direction: column;
-        align-items:center;
-        max-width: 668px;
-        padding: 0;
-        margin: 0;
-        min-height: 0;
-    }
-    .about__description p{
-        font-size: 15px;
-        line-height: 25px;
-    }
-    .about__img{
-        width: 150px;
-        height: 147px;
-    }
-
-    .service{
-        padding-top:30px;
-        padding-bottom: 20px;
-    }
-    .service h2{
-        font-size: 25px; 
-        margin-bottom: 35px;
-        max-width: 187px;
-    }
-    .menu__buttons{
-        display: flex;
-        max-width: 252px;
-        flex-wrap: wrap;
-    }
-    .menu__button {
-        display: flex;
-        justify-content: center;
-        align-items:center;
-        border: 1px solid #E06733;
-        border-radius: 5px;
-        transition: 0.2s;
-        max-width: 121px;
-        max-height: 35px;
-        font-size: 15px;
-        margin: 0;
-    }
-    .menu__button:nth-child(1){
-        margin-bottom: 9px;
-    }
-    .menu__buttons .menu__button:last-child{
-        margin-top: 0px;
-    }
-    .menu__button+.menu__button {
-        margin-left: 0px;
+    .overflow{
+        overflow: hidden;
     }
     .menu__cards{
-        justify-content: center;
+        flex-direction: column;
+        align-items:center;
     }
-    .menu__cards a{
-        margin-bottom: 34px;
+    .menu__buttons{
+        display: block;
     }
-    .menu__cards a:last-child{
-        margin-bottom: 0;
+    .menu__buttons .menu__button{
+        margin: 0;
     }
+    .menu__buttons .menu__button:last-child{
+        margin-top: 10px;
+    }
+
 
     .prices{
         min-height: 512px;
         padding-bottom: 84px;
-        padding-top:18px;
+        padding-top:5px;
         padding-bottom: 37px;
     }
     .prices__content {
@@ -180,8 +132,7 @@
     .prices__info h2{
         font-size: 25px;
         text-align: center;
-        margin-bottom: 27px;
-        padding-left: 0;
+        margin-bottom: 40px;
     }
     .pricebuttons {
         min-height: 235px;
@@ -215,6 +166,7 @@
     }
     .price__description h3 {
         font-size: 20px;
+        margin-bottom: 22px;
         line-height: 35px;
         margin-bottom: 14px;
         text-align: center;
@@ -229,8 +181,7 @@
         justify-content: center;
         font-size: 15px;
         align-items:center;
-        padding: 12px 16px 12px 20px;
-        width: 121px;
+        padding: 12px 16px 12px 30px;
     }
     .price__contacts img{
         display: none;
@@ -269,7 +220,6 @@
     .contact__img{
         width: 100px;
         height: 124px;
-        margin: 0;
     }
     .contact__img img{
         width:100%;
@@ -341,6 +291,4 @@
     .overflow{
         overflow: hidden;
     }
-
-    
 }
