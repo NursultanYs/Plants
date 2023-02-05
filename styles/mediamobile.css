@@ -202,7 +202,7 @@
         max-width: 180px;
         max-height: 49px;
         transition: 0.2s;
-        padding-left: 30px;
+        padding-left: 0px;
     }
     .pricebuttons label::after {   
        top: 18px;
@@ -277,9 +277,49 @@
     }
     .contact__content button {
         max-width: 300px;
-        padding: 13px 279px 13px 20px;
         margin-bottom: 132px;
     }   
+    .contact__content button {
+        max-width: 282px;   
+        margin-bottom: 0px;
+    }  
+    .contact_arrow {
+        right: 16px;
+    } 
+    .contact__city__information{
+        padding: 23px 27px;
+        width: 282px;
+    }
+    .contact__city-section{
+        width: 92px;
+    }
+    .contact__city-names{
+        margin:0;
+    }
+    .contact__city__information p{
+        font-family: Inter;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.05em;
+        color: #000000;
+        margin: 0;
+        margin-bottom:18px;
+    }
+    .contact__city-names p{
+        font-family: 'Inter';
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.05em;
+        color: #717171;
+        margin: 0;
+        margin-bottom: 18px;
+    }
+    .contact__call{
+        position: absolute;
+        top: 140px;
+        right: 73px;
+    }
+
     .footer{
         padding: 24px 22px;
     }
@@ -342,5 +382,6 @@
         overflow: hidden;
     }
 
+    
     
 }

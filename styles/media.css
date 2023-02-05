@@ -156,6 +156,7 @@
         font-weight: 700;
         font-size: 40px;
         color: #499A18;
+        min-height: 739px;
     }
     .contact__button{
         justify-content: center;
@@ -164,7 +165,7 @@
         text-align:center
     }
     .contact__content button{
-        margin-bottom: 250px;
+        margin-bottom: 0;
     }
     .contact__img{
         width: 200px;
@@ -174,6 +175,15 @@
     .contact__img img{
         width:100%;
         height: auto;
+    }
+    .contact__accordeon-wrapper{
+        text-align: start;
+    }
+    .contact__accordeon{
+        margin-bottom: 25px;
+    }
+    .contact__city__information{
+        margin-bottom: 25px;
     }
 
     .footer{
