@@ -318,3 +318,129 @@ callBtn.addEventListener('click',()=>{
 })
 
 
+
+
+
+function reverse(n){
+    n=Number(n.toString().split('').reverse().join(''));
+    console.log(n);
+}
+reverse();
+
+
+
+function towelSort(arr){
+    const newArr=[];
+    arr=arr.forEach(item=>{
+        item.forEach(item=>{
+            newArr.push(item);
+        })
+    })
+    console.log(newArr);
+}
+towelSort([
+    [ 1, 2, 3 ],
+    [ 4, 5, 6 ],
+    [ 7, 8, 9 ],
+   ])
+
+function towelSort(matrix) {
+    if (!matrix || matrix.length === 0) {
+      return [];
+    }
+  
+    const result = [];
+  
+    for (let i = 0; i < matrix.length; i++) {
+
+      if (i % 2 === 1) {
+        matrix[i].reverse();
+      }
+
+      for (let j = 0; j < matrix[i].length; j++) {
+        result.push(matrix[i][j]);
+      }
+    }
+  
+    return result;
+  }
+
+   function humanNumber(number) {
+    const ones = ['', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
+    const tens = ['', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
+    const teens = ['ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
+  
+    if (number === 0) {
+      return 'zero';
+    }
+  
+    const numString = number.toString();
+  
+    if (number < 10) {
+      return ones[number];
+    }else if (number < 20) {
+      return teens[number - 10];
+    }else if (number < 100) {
+      return `${tens[Math.floor(number / 10)]} ${ones[number % 10]}`.trim();
+    }else if (number < 1000) {
+      return `${ones[Math.floor(number / 100)]} hundred ${humanNumber(number % 100)}`.trim();
+    }else if (number < 1000000) {
+      return `${humanNumber(Math.floor(number / 1000))} thousand ${humanNumber(number % 1000)}`.trim();
+    }else if (number < 1000000000) {
+      return `${humanNumber(Math.floor(number / 1000000))} million ${humanNumber(number % 1000000)}`.trim();
+    }
+  }
+  console.log(humanNumber(997))
+
+
+  function Morse(code) {
+    let mean = { 
+      '.-':     'a',
+      '-...':   'b',
+      '-.-.':   'c',
+      '-..':    'd',
+      '.':      'e',
+      '..-.':   'f',
+      '--.':    'g',
+      '....':   'h',
+      '..':     'i',
+      '.---':   'j',
+      '-.-':    'k',
+      '.-..':   'l',
+      '--':     'm',
+      '-.':     'n',
+      '---':    'o',
+      '.--.':   'p',
+      '--.-':   'q',
+      '.-.':    'r',
+      '...':    's',
+      '-':      't',
+      '..-':    'u',
+      '...-':   'v',
+      '.--':    'w',
+      '-..-':   'x',
+      '-.--':   'y',
+      '--..':   'z',
+      '.----':  '1',
+      '..---':  '2',
+      '...--':  '3',
+      '....-':  '4',
+      '.....':  '5',
+      '-....':  '6',
+      '--...':  '7',
+      '---..':  '8',
+      '----.':  '9',
+      '-----':  '0',
+    };
+
+    code=code.split('   ')
+    let item1;
+    code=code.map(item=>{
+        return item.split(' ').map(a=>mean[a]).join('')
+    }).join(' ')
+    console.log(code);
+}
+
+    
+    let decoded = Morse(".-- --- .-. -..   .-- --- .-. -..");
+    console.log(decoded); 
